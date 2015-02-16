@@ -1,0 +1,8 @@
+{
+    "name": "Disable background dim",
+    "description": "A homescreen patch for disabling background dimming when scrolling launcher to bottom",
+    "category": "homescreen",
+    "infos": {
+        "maintainer": "coderus"
+    }
+}

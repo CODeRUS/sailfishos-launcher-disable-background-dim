@@ -1,0 +1,19 @@
+commit 115b9892047f8adca2e2abf5f48bbe71702fcf20
+Author: CODeRUS <coderusinbox@gmail.com>
+Date:   Tue Feb 17 04:26:44 2015 +0500
+
+    [v0.0.1] Disable background dim
+
+diff --git a/usr/share/lipstick-jolla-home-qt5/main.qml b/usr/share/lipstick-jolla-home-qt5/main.qml
+index dd564db..bdaa4e5 100644
+--- a/usr/share/lipstick-jolla-home-qt5/main.qml
++++ b/usr/share/lipstick-jolla-home-qt5/main.qml
+@@ -152,7 +152,7 @@ ApplicationWindow {
+         Binding {
+             target: Lipstick.compositor
+             property: "backgroundOpacity"
+-            value: lipstickSettings.lowPowerMode ? 0 : (1-Math.max(dimmedBackgroundValue, wallpaperPath.opacity))
++            value: lipstickSettings.lowPowerMode ? 0 : 1
+         }
+ 
+         SilicaFlickable {
